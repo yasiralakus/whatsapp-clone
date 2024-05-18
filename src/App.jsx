@@ -11,7 +11,10 @@ export default function App() {
     return (
         <div className="full-page">
 
-            <div className="green-bg"></div>
+            <div className="green-bg">
+                <img src="./img/logo.png" alt="" />
+                <p>Bu proje 800px üzeri için kodlanmıştır.</p>
+            </div>
 
             <div className="whatsapp">
 

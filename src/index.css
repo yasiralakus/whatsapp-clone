@@ -56,6 +56,9 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #00A884;
     width: 100%;
     z-index: 0;
+    > img, p {
+        display: none;
+    }
 }
 
 .whatsapp {
@@ -450,4 +453,58 @@ p, h1, h2, h3, h4, h5, h6 {
     .message-box main {
         padding: 20px;
     }
+}
+
+@media (width < 1000px) {
+    .whatsapp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .right {
+        width: 100%;
+        height: 963px;
+    }
+
+    .left {
+        width: auto;
+    }
+
+    .message-list-item {
+        > div {
+            overflow: hidden;
+            white-space: nowrap;
+            > h6 {
+                font-size: 11px;
+            }
+        }
+        
+    }
+    
+}
+
+@media (width < 800px) {
+
+    .whatsapp {
+        display: none;
+    }
+
+    .green-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        height: 100vh;
+        font-weight: 600;
+        > img, p {
+            display: inline-block;
+        }
+    }
+    
 }
