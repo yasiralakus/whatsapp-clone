@@ -41,7 +41,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .full-page {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,5 +506,4 @@ p, h1, h2, h3, h4, h5, h6 {
             display: inline-block;
         }
     }
-    
 }
